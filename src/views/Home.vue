@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Jazz-en-Boucle</h1>
+    <h1>Bouclons-le-Jazz</h1>
     <button @click="playPause">{{ label }}</button>
     <div class="players">
       <LoopPlayer ref="son1" name="sax" source="son1.wav"></LoopPlayer>

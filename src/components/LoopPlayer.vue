@@ -1,7 +1,7 @@
 <template>
   <div class="loop-player">
     <audio :class="playerViz" ref="audioLoop" controls loop :src="source"></audio>
-    <img @click="toggleMute" :class="{ muted: muted }" class="icon" :src="src"/>
+    <img @click="toggleMute" :class="{ muted: muted }" class="icon" :src="imageSrc"/>
     <input type="range" min="0" max="1" step="0.2" v-model="volume" />
   </div>
 </template>
@@ -36,7 +36,7 @@ export default {
     }
   },
   computed: {
-    src: function(){
+    imageSrc: function(){
       return this.name + ".png";
     }
   },
